@@ -73,101 +73,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/05/22/test/" class="article-date">
-  <time class="dt-published" datetime="2023-05-22T05:27:52.475Z" itemprop="datePublished">2023-05-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><img src="/.com//image-20230522132559142.png" alt="image-20230522132559142"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/05/22/test/" data-id="clhyepfdn00003zl18db372gz" data-title="" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hexo搭建个人博客/hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/05/22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo/" class="article-date">
-  <time class="dt-published" datetime="2023-05-21T17:20:51.182Z" itemprop="datePublished">2023-05-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
-<h1 id="hexo搭建个人博客"><a href="#hexo搭建个人博客" class="headerlink" title="hexo搭建个人博客"></a>hexo搭建个人博客</h1><p>2020</p>
-<hr>
-<h2 id="1-安装软件"><a href="#1-安装软件" class="headerlink" title="1.安装软件"></a>1.安装软件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装nodejs</span></span><br><span class="line">[root@rex-kvm ~]<span class="comment">#yum -y install npm</span></span><br><span class="line"><span class="comment"># 并且检查版本</span></span><br><span class="line">[root@rex-kvm ~]<span class="comment">#node -v</span></span><br><span class="line">v16.19.1</span><br><span class="line"><span class="comment"># 换成国内的淘宝源</span></span><br><span class="line">[root@rex-kvm ~]<span class="comment">#npm install -g cnpm --registry=https://registry.npm.taobao.org</span></span><br><span class="line"><span class="comment"># 安装hexo-cli</span></span><br><span class="line">[root@rex-kvm ~]<span class="comment">#cnpm install hexo-cli</span></span><br><span class="line">[root@rex-kvm ~]<span class="comment">#hexo -v</span></span><br><span class="line">hexo-cli: 4.3.0</span><br><span class="line">os: linux 5.14.0-162.18.1.el9_1.x86_64 Rocky Linux 9.1 (Blue Onyx)</span><br><span class="line">node: 16.19.1</span><br><span class="line">v8: 9.4.146.26-node.24</span><br><span class="line">uv: 1.43.0</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.9</span><br><span class="line">ares: 1.18.1</span><br><span class="line">modules: 93</span><br><span class="line">nghttp2: 1.47.0</span><br><span class="line">napi: 8</span><br><span class="line">llhttp: 6.0.10</span><br><span class="line">openssl: 3.0.7</span><br><span class="line">cldr: 41.0</span><br><span class="line">icu: 71.1</span><br><span class="line">tz: 2022a</span><br><span class="line">unicode: 14.0</span><br><span class="line"><span class="comment"># 安装git</span></span><br><span class="line">[root@rex-kvm ~]<span class="comment">#cnpm install --save hexo-deployer-git</span></span><br><span class="line">✔ Linked 10 latest versions fallback to /root/node_modules/.store/node_modules</span><br><span class="line">✔ Installed 1 packages on /root</span><br><span class="line">✔ All packages installed (6 packages installed from npm registry, used 1s(network 1s), speed 1.04MB/s, json 6(76.33KB), tarball 1.32MB, manifests cache hit 4, etag hit 0 / miss 0)</span><br><span class="line"></span><br><span class="line">dependencies:</span><br><span class="line">+ hexo-deployer-git ^4.0.0</span><br><span class="line"><span class="comment"># 设置时区</span></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#cnpm install moment-timezone</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="2-博客初始化"><a href="#2-博客初始化" class="headerlink" title="2.博客初始化"></a>2.博客初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化博客</span></span><br><span class="line">[root@rex-kvm /home/share]<span class="comment">#mkdir hexo</span></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#hexo init</span></span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">INFO  Start blogging with Hexo!</span><br><span class="line"><span class="comment"># 生成以下文件</span></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#ll</span></span><br><span class="line">total 112</span><br><span class="line">-rw-r--r--   1 root root     0 May 21 22:52 _config.landscape.yml</span><br><span class="line">-rw-r--r--   1 root root  2441 May 21 22:52 _config.yml <span class="comment"># 配置文件</span></span><br><span class="line">drwxr-xr-x 217 root root  8192 May 21 22:52 node_modules</span><br><span class="line">-rw-r--r--   1 root root   615 May 21 22:52 package.json</span><br><span class="line">-rw-r--r--   1 root root 90591 May 21 22:52 package-lock.json</span><br><span class="line">drwxr-xr-x   2 root root    52 May 21 22:52 scaffolds</span><br><span class="line">drwxr-xr-x   3 root root    20 May 21 22:52 <span class="built_in">source</span></span><br><span class="line">drwxr-xr-x   2 root root    22 May 21 22:52 themes  <span class="comment"># 配置主题</span></span><br><span class="line"><span class="comment"># 清理生成的文件和缓存</span></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#hexo clean</span></span><br><span class="line">INFO  Validating config</span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#hexo  generate</span></span><br><span class="line">INFO  Validating config</span><br><span class="line"><span class="comment"># 在本地4000端口开启服务</span></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#hexo  s</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="3-推送在github"><a href="#3-推送在github" class="headerlink" title="3.推送在github"></a>3.推送在github</h2><ul>
-<li><p>注册github账号</p>
-</li>
-<li><p>创建仓库（部署个人博客的giuhub仓库的命名必须符合要求）</p>
-<p>如：我的github用户名为liaochunlong12345，我的仓库名是：liaochunlong12345.github.io</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 我的仓库连接</span></span><br><span class="line">https://github.com/liaochunlong12345/liaochunlong12345.github.io.git</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p><img src="/./hexo.assets/image-20230521215829612.png" alt="image-20230521215829612"></p>
-<ul>
-<li>添加SSh公钥</li>
-</ul>
-<p><img src="/./hexo.assets/image-20230521233108123.png" alt="image-20230521233108123"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加全局的git配置</span></span><br><span class="line">git config --global user.name <span class="string">&quot;liaochunlong&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;695794499@qq.com&quot;</span></span><br><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查公钥是否成功</span></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#ssh -T git@github.com</span></span><br><span class="line">The authenticity of host <span class="string">&#x27;github.com (20.205.243.166)&#x27;</span> can<span class="string">&#x27;t be established.</span></span><br><span class="line"><span class="string">ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</span></span><br><span class="line"><span class="string">This key is not known by any other names</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added &#x27;</span>github.com<span class="string">&#x27; (ED25519) to the list of known hosts.</span></span><br><span class="line"><span class="string">Hi liaochunlong12345! You&#x27;</span>ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改配置文件</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/liaochunlong12345/liaochunlong12345.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">hexo clean  <span class="comment"># 清除了你之前生成的东西，也可以不加。</span></span><br><span class="line">hexo generate <span class="comment">#  顾名思义，生成静态文章，可以用 hexo g缩写</span></span><br><span class="line">hexo deploy <span class="comment"># 部署文章，可以用hexo d缩写</span></span><br><span class="line"></span><br><span class="line">[root@rex-kvm /home/share/hexo]<span class="comment">#hexo  d</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend <span class="built_in">dirs</span>...</span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br><span class="line">Username <span class="keyword">for</span> <span class="string">&#x27;https://github.com&#x27;</span>: liaochunlong12345</span><br><span class="line">Password <span class="keyword">for</span> <span class="string">&#x27;https://liaochunlong12345@github.com&#x27;</span>:  <span class="comment"># 这里使用token</span></span><br><span class="line">Enumerating objects: 91, <span class="keyword">done</span>.</span><br><span class="line">Counting objects: 100% (91/91), <span class="keyword">done</span>.</span><br><span class="line">Delta compression using up to 24 threads</span><br><span class="line">Compressing objects: 100% (51/51), <span class="keyword">done</span>.</span><br><span class="line">Writing objects: 100% (91/91), 283.85 KiB | 11.83 MiB/s, <span class="keyword">done</span>.</span><br><span class="line">Total 91 (delta 19), reused 0 (delta 0), pack-reused 0</span><br><span class="line">remote: Resolving deltas: 100% (19/19), <span class="keyword">done</span>.</span><br><span class="line">To https://github.com/liaochunlong12345/liaochunlong12345.github.io.git</span><br><span class="line"> * [new branch]      HEAD -&gt; master</span><br><span class="line">Branch <span class="string">&#x27;master&#x27;</span> <span class="built_in">set</span> up to track remote branch <span class="string">&#x27;master&#x27;</span> from <span class="string">&#x27;https://github.com/liaochunlong12345/liaochunlong12345.github.io.git&#x27;</span>.</span><br><span class="line"></span><br><span class="line"><span class="comment"># 此时部署成功</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/./hexo.assets/image-20230522004407406.png" alt="image-20230522004407406"></p>
-<p><img src="/./hexo.assets/image-20230522004456410.png" alt="image-20230522004456410"></p>
-<blockquote>
-<p>访问域名：<a target="_blank" rel="noopener" href="https://liaochunlong12345.github.io/">Rex (liaochunlong12345.github.io)</a></p>
-</blockquote>
-<ul>
-<li><p>token生成</p>
-<p><img src="/./hexo.assets/image-20230522004234892.png" alt="image-20230522004234892"></p>
-<p><img src="/./hexo.assets/image-20230522004300576.png" alt="image-20230522004300576"></p>
-</li>
-</ul>
-<p>[参考文章]（<a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029?ops_request_misc=%7B%22request_id%22:%22168468281616800197020491%22,%22scm%22:%2220140713.130102334..%22%7D&request_id=168468281616800197020491&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-82729029-null-null.142%5Ev87%5Econtrol_2,239%5Ev2%5Einsert_chatgpt&utm_term=hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&spm=1018.2226.3001.4187">hexo史上最全搭建教程_zjufangzh的博客-CSDN博客</a>）</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/05/22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo/" data-id="clhxoi9670000eql11nm9hg1r" data-title="" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/05/21/hello-world/" class="article-date">
@@ -248,14 +153,6 @@
     <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2023/05/22/test/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/05/22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo/">(no title)</a>
-          </li>
         
           <li>
             <a href="/2023/05/21/hello-world/">Hello World</a>
